@@ -7,10 +7,10 @@
 
 # Site Settings
 locale                   : "en-US"
-title                    : "Li Feng / Site Title"
+title                    : "Li Feng"
 title_separator          : "-"
 name                     : &name "Li Feng"
-description              : &description ""
+description              : &description "Nanjing University of Posts and Telecommunications"
 url                      : https://FengEternity.github.io # the base hostname & protocol for your site e.g. "https://mmistakes.github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "FengEternity/FengEternity.github.io"
@@ -83,7 +83,7 @@ author:
   name             : "Li Feng"
   avatar           : "avatar.png"
   bio              : "Nanjing University of Posts and Telecommunications"
-  location         : # "Location"
+  location         : "Nanjing, Jiangsu"
   employer         :
   pubmed           : # "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   googlescholar    : # "http://yourfullgooglescholarurl.com"
