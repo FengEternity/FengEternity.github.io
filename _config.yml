@@ -6,7 +6,7 @@
 # `jekyll serve`. If you change this file, please restart the server process.
 
 # Site Settings
-locale                   : "en-US"
+locale                   : "en-US's Personal Homepage"
 title                    : "Monty Lee"
 title_separator          : "-"
 name                     : &name "Monty Lee"
@@ -83,13 +83,13 @@ author:
   name             : "Monty Lee"
   avatar           : "avatar.png"
   bio              : "南京邮电大学"
-  location         : # "Nanjing, Jiangsu"
+  location         : "Nanjing, Jiangsu"
   employer         :
   pubmed           : # "https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   googlescholar    : # "http://yourfullgooglescholarurl.com"
   email            : "feng_life@foxmail.com"
   researchgate     : # example: "https://www.researchgate.net/profile/yourprofile"
-  uri              :
+  uri              : "https://montylee.cc"
   bitbucket        :
   codepen          :
   dribbble         :
