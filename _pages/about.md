@@ -61,6 +61,21 @@ redirect_from:
 
 # 公开成果
 
+<div style="display: flex; justify-content: space-between;">
+    <span style="float: left;font-weight: bold;font-size: 1.0em;">Efficient Prompt Tuning for Vision and Language Models</span>
+    <span style="float: right;font-size: 1.0em;">2023.11</span>
+</div>
+
+<div style="display: flex; justify-content: space-between;">
+            <span style="font-weight: bold; font-size: 0.8em;">The 30th International Conference on Neural Information Processing</span>
+            <div style="display: flex; flex-direction: column; align-items: flex-end;">
+            <span style="font-size: 0.8em;">ICONIP2023</span>
+            </div>
+        </div>
+<!-- <div style="line-height: 1;">&nbsp;</div> -->
+
+- <p style="font-size: 0.8em">In this paper, we propose a more efficient CLIP prompt tuning method, achieving better performance and faster convergence in downstream tasks using large-scale pre-trained visual language models. Experimental results on 11 datasets demonstrate the superiority of our approach.</p>
+
 ---
 
 # 获奖经历
