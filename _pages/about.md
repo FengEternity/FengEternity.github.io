@@ -32,7 +32,7 @@ redirect_from:
 
 <div style="display: flex; justify-content: space-between;">
     <span style="float: left;font-weight: bold;font-size: 1.0em;">基于 Diffusion Model 的图像去雾算法研究</span>
-    <span style="float: right;font-size: 1.0em;">2022.04 至今</span>
+    <span style="float: right;font-size: 1.0em;">2022.04-2023.12</span>
 </div>
 
 <div style="display: flex; justify-content: space-between;">
@@ -65,11 +65,51 @@ redirect_from:
 
 # 获奖经历
 
+<ul style="list-style: none; padding: 0;">
+    <li style="margin-bottom: 10px;">
+        <div style="display: flex; justify-content: space-between;">
+            <span style="font-weight: bold; font-size: 0.8em;">美国大学生数学建模大赛</span>
+            <span style="font-size: 0.8em;">Honorable Mention</span>
+            <span style="font-size: 0.8em;">2023.05</span>
+        </div>
+    </li>
+    <li style="margin-bottom: 10px;">
+        <div style="display: flex; justify-content: space-between;">
+            <span style="font-weight: bold; font-size: 0.8em;">中国高校计算机大赛——网络技术挑战赛</span>
+            <span style="font-size: 0.8em;">华东赛区三等奖</span>
+            <span style="font-size: 0.8em;">2023.07</span>
+        </div>
+    </li>
+    <li style="margin-bottom: 10px;">
+        <div style="display: flex; justify-content: space-between;">
+            <span style="font-weight: bold; font-size: 0.8em;">全国大学生物联网设计竞赛（华为杯）</span>
+            <span style="font-size: 0.8em;">全国二等奖</span>
+            <span style="font-size: 0.8em;">2023.08</span>
+        </div>
+    </li>
+    <li style="margin-bottom: 10px;">
+        <div style="display: flex; justify-content: space-between;">
+            <span style="font-weight: bold; font-size: 0.8em;">大学生物联网技术与应用“三创”大赛</span>
+            <span style="font-size: 0.8em;">全国一等奖</span>
+            <span style="font-size: 0.8em;">2023.08</span>
+        </div>
+    </li>
+    <li style="margin-bottom: 10px;">
+        <div style="display: flex; justify-content: space-between;">
+            <span style="font-weight: bold; font-size: 0.8em;">全国大学生数学建模竞赛</span>
+            <span style="font-size: 0.8em;">江苏省二等奖</span>
+            <span style="font-size: 0.8em;">2023.09</span>
+        </div>
+    </li>
+    <!-- 在此处添加其他项目 -->
+</ul>
+
+
 ---
 
 # 专业技能
-
----
+* **编程语言：** **Python(Pytorch)** >= **C** > **C++** >  **Java**
+* **机器学习 深度学习 图像处理 数据分析 AIGC**
 
 
 
