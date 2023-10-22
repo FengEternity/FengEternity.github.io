@@ -37,6 +37,7 @@ ControlNet 以 end-to-end 的方式学习特定任务的
 
 3. trainable copy 和 locked copy 使用一张名为 zero convolution 的特殊卷基层进行连接
 
+*具体的内容在后面的 Method 部分有详细讲述*
 
 # 2. Related Work
 
@@ -53,3 +54,19 @@ ControlNet 以 end-to-end 的方式学习特定任务的
 
 ## 2.4 Personalization,Customization, and Control of Pretrained Diffusion Model
 
+## 2.5 Image-to-Image Translation
+
+指出 ControlNet 与 Image-to-Image Translation 是不同的任务。
+
+# 3. Method
+
+$$y = F(x;\theta)$$
+上式指，神经网络 $F$ 使用一组参数 $\theta$ 将 $x$ 映射到 $y$ 中。
+ControlNet 的做法是：
+1. 锁定 $\theta$ 中的所有参数，然后将其克隆到可训练的副本 $\theta_c$ 中，使用条件向量 $c$ 进行训练。（文章中将原始参数和新参数分别称为：locked copy, trained copy；**制作这样的副本而不是直接训练原始权值的动机是为了在数据集较小时避免过拟合，并保持从数十亿张图像中学习的大型模型的能力**）
+2. 连接神经网络块的是一种独特的卷基层，称为"zero convolution",即权值和偏差都为零的 $1\times1$ 的卷基层。
+
+模型图如下，
+<img src="/images/blog/Adding-Conditional-Control-to-Text-to-Text-Diffusion-Models/截屏2023-10-22 21.56.50.png">
+
+神经网络块的 train copy 和 locked copy 的所有输入和输出都与不存在 ControlNet 时的输入和输出一致。也就是说，当一个 ControlNet 应用于某些神经网络块时，**在进行任何优化之前，不会对深层神经特征造成任何影响。** 任何神经网络块的功能、功能和结果质量都得到了完美的保存，任何进一步的优化都将变得与微调一样快(与从头开始训练这些层相比)。
