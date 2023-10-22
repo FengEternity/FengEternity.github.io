@@ -73,13 +73,13 @@ $$ \theta ^ * = \underset{x}{argmin} E(f_\theta (z);x_0) , x^* = f_\theta * (z) 
 > - 名词解释：
 > 	- **ground truth**: 用于监督网络学习的图片，比如在超分任务中， ground truth 指低分辩率图片所对应的高分辨率图片
 
-	![](images/blog/deep_image_prior/截屏2023-10-04 22.16.17.png)
+<img src="/images/blog/deep_image_prior/2023-10-04-22.16.17.png">
 
 ## 2.1 A parametrization with high noise impedance
 详见下方的 6.2.1 and 6.2.2
 ## 2.2 "Sampling" from the deep image prior
 介绍了实验中如何设计网络结构
-	![](images/blog/deep_image_prior/截屏2023-10-05 13.58.55.png)
+	<img src="/images/blog/deep_image_prior/2023-10-05 13.58.55.png">
 	* 上图中五列分别代表不同的网络结构，每一列代表两种不同的随机输入$\theta$
 	* 这张图是神经网络采样阶段的可视化结果 *（可以理解为diffusion model 中的扩散阶段，所得到的图片是 reverse 阶段的起点）*
 # 3. Applications
@@ -89,11 +89,12 @@ $$ \theta ^ * = \underset{x}{argmin} E(f_\theta (z);x_0) , x^* = f_\theta * (z) 
 ## 3.1 Denoising and generic reconstruction
 
 在前面介绍过，神经网络天生对自然的图像更加敏感，因此非常适合应用于图像去噪的任务当中。
-![[截屏2023-10-06 14.25.28.png]]
+<img src="/images/blog/deep_image_prior/截屏2023-10-05 14.00.14.png">
 ## 3.2 Super-resolution
-![[截屏2023-10-06 14.33.04.png]]
+<img src="/images/blog/deep_image_prior/截屏2023-10-06 14.33.04.png">
 
-![[截屏2023-10-06 14.35.00.png]]
+<img src="/images/blog/deep_image_prior/截屏2023-10-06 14.35.00.png">
+
 ## 3.3 Inpainting
 
 ## 3.4 Natural pre-image
@@ -102,7 +103,8 @@ $$ \theta ^ * = \underset{x}{argmin} E(f_\theta (z);x_0) , x^* = f_\theta * (z) 
 ## 3.6 Image enhancement
 
 ## 3.7 Flash-no flash reconstruction
-![[截屏2023-10-06 14.38.28.png]]
+<img src="/images/blog/deep_image_prior/截屏2023-10-06 14.38.28.png">
+
 # 4. Technical details
 
 这一部分详细介绍了神经网络是如何设计的，如果要深入研究，可结合文章提供的代码重点阅读。
@@ -139,9 +141,7 @@ $$ \theta ^ * = \underset{x}{argmin} E(f_\theta (z);x_0) , x^* = f_\theta * (z) 
 > 【组会-深度网络竟然天生就懂得去噪?】 https://www.bilibili.com/video/BV1bB4y1472M/?share_source=copy_web&vd_source=06503cc8285f468251f7ebe06f8e75de
 
 ### 7.2.1 Related work
-
-![[截屏2023-10-05 13.58.55.png]]
-![[截屏2023-10-05 14.00.14.png]]
+<img src="/images/blog/deep_image_prior/2023-10-04-22.16.17.png">
  * 观察上图可得，真实图像在在进行某学习任务中更容易收敛
  * Image shuffled *（将图像的像素信息随机打乱，使得图像失去空间信息）*, $U(0,1)$ noise 的变化曲线可能存在神经网络强行拟合的可能性而不是学习任务所需要的规律
 
@@ -159,13 +159,16 @@ $$ \theta ^ * = \underset{x}{argmin} E(f_\theta (z);x_0) , x^* = f_\theta * (z) 
 > 当我们手中只有坏图像，应该如何去修复它们呢？*（无监督学习）*
 
 作者提出了一个“惊为天人”的方法，如下图所示：
-	![[截屏2023-10-05 14.29.21.png]]
+    <img src="/images/blog/deep_image_prior/截屏2023-10-05 14.29.21.png">
+
 
 比较神奇的一件事情是，**神经网络天生能够理解那些图片是自然的，那些图片是不自然的。**
 
 ### 7.2.4 Networks
-![[截屏2023-10-05 14.35.54.png]]
+<img src="/images/blog/deep_image_prior/截屏2023-10-05 14.35.54.png">
+
 
 ### 7.2.5 Results
-![[截屏2023-10-05 14.37.41.png]]
+<img src="/images/blog/deep_image_prior/截屏2023-10-05 14.37.41.png">
+
 对于上面的去噪任务中，可以看出随着迭代次数的增加，最好的结果出现在了 2400 iterations 
