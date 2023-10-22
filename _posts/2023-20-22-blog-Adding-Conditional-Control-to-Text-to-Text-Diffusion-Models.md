@@ -1,9 +1,7 @@
 ---
-title: 'Adding Conditional Control to Text-to-Image
-Diffusion Models'
+title: 'Adding Conditional Control to Text-to-Image Diffusion Models'
 date: 2023-10-22
-permalink: /posts/2023/10/22/Adding Conditional Control to Text-to-Image
-Diffusion Models/
+permalink: /posts/2023/10/22/Adding Conditional Control to Text-to-Image Diffusion Models/
 tags:
   - DeepLearning
   - Diffusion Model
