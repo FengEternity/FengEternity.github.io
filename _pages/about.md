@@ -128,8 +128,8 @@ redirect_from:
 ---
 
 # 专业技能
-* **编程语言：** Python(Pytorch) >= C > C++ >  Java
-* **学习方向：** 机器学习 深度学习 图像处理 数据分析 AIGC
+* <span style="font-size:0.8em">**编程语言：** Python(Pytorch) >= C > C++ > Java</span>
+* <span style="font-size:0.8em">**学习方向：** 机器学习 深度学习 图像处理 数据分析 AIGC</span>
 
 
 
