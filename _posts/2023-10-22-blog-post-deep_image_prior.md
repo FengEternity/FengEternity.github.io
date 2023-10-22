@@ -1,7 +1,7 @@
 ---
 title: 'Deep Image Prior'
 date: 2023-10-22
-permalink: /posts/2023/10/Deep Image Prior/
+permalink: /posts/2023/10/22/Deep Image Prior/
 tags:
   - DeepLearning
 ---
