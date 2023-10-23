@@ -61,6 +61,8 @@ ControlNet 以 end-to-end 的方式学习特定任务的
 # 3. Method
 
 $$y = F(x;\theta)$$
+
+
 上式指，神经网络 $F$ 使用一组参数 $\theta$ 将 $x$ 映射到 $y$ 中。
 ControlNet 的做法是：
 
