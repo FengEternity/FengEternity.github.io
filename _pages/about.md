@@ -121,6 +121,14 @@ redirect_from:
             </div>
         </div>
     </li>
+    <li style="margin-bottom: 10px;">
+        <div style="display: flex; justify-content: space-between;">
+            <span style="font-weight: bold; font-size: 0.8em;">中国高校计算机大赛——人工智能创意赛</span>
+            <div style="display: flex; flex-direction: column; align-items: flex-end;">
+            <span style="font-size: 0.8em;">区域赛三等奖 2023.10</span>
+            </div>
+        </div>
+    </li>
     <!-- 在此处添加其他项目 -->
 </ul>
 
