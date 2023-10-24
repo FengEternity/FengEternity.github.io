@@ -13,3 +13,8 @@ tags:
 
 
 # Abstract
+
+该文章从各个角度对Transformer 架构进行鲁棒性分析。
+
+# 1. Introduction
+
