@@ -103,14 +103,14 @@ tags:
 
 这一部分，作者通过计算 layer correlations, lesion studies and restricting attention 来理解 ViT 模型中的信息流
 
-1. Layer correlations
+* **Layer correlations**
 
 <img src="/images/blog/Understanding%20Robustness%20of%20Transformers%20for%20Image%20Classification/screenshot-20231024-221340.png">
 
-作者将每个 Transformer 块后的表示(hidden feature)与所有其他块的“表示”进行比较。当考虑到所有的 token 时(左)，观察到“表示(representations)”越来越接近网络的末端。相反，当只看 CLS token 时(右边)，“表示”在整个网络中变得不那么相关。一个可能的解释是，**早期的层关注于空间 token 之间的交互，而后来的层关注于空间 token 和 CLS token 之间的交互。**
+  作者将每个 Transformer 块后的表示(hidden feature)与所有其他块的“表示”进行比较。当考虑到所有的 token 时(左)，观察到“表示(representations)”越来越接近网络的末端。相反，当只看 CLS token 时(右边)，“表示”在整个网络中变得不那么相关。一个可能的解释是，**早期的层关注于空间 token 之间的交互，而后来的层关注于空间 token 和 CLS token 之间的交互。**
 
 
-2. Lesion study
+* **Lesion study**
 
    * 前人的研究表明，残差网络中的各层存在大量冗余，并且几乎可以在训练后去除任意一层而不影响性能，在 ViT 中也存在这种现象；
 
@@ -124,11 +124,11 @@ tags:
 <img src="/images/blog/Understanding%20Robustness%20of%20Transformers%20for%20Image%20Classification/screenshot-20231024-221913.png">
 
 
-3. Restricted attention
+* **Restricted attention**
 
 <img src="/images/blog/Understanding%20Robustness%20of%20Transformers%20for%20Image%20Classification/screenshot-20231024-222410.png">
 
-作者发现 ViT 模型包含惊人参数数量的冗余，这表明在推理过程中该模型可以被大量修剪。
+  作者发现 ViT 模型包含惊人参数数量的冗余，这表明在推理过程中该模型可以被大量修剪。
 
 # 5. Conclusion
 
