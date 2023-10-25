@@ -53,3 +53,32 @@ $$联邦学习 = 分布式训练 + 隐私保护机制$$
 
 # 2. Related works
 
+## 2.1 Definition of federated learning
+
+<img src="/images/blog/A_survey_on_federated_learning/screenshot-20231025-191922.png">
+
+步骤：
+1. 服务器将初始模型发送到每个设备
+2. 分布式设备使用本地数据进行训练
+3. 服务器将收集到的本地模型聚合到全局模型，
+4. 最后再将全局模型替换到分布式设备上
+
+
+## 2.2 The development of federated learning
+
+举例说明了什么是联邦学习，所以这部分的标题为什么叫 'development'？
+
+# 3. Categorizations of federated learing
+
+本节从数据分区、隐私机制、适用的机器学习模型、通信体系结构和解决异构问题的方法五个方面总结了联邦学习的分类。
+
+<img src="/images/blog/A_survey_on_federated_learning/screenshot-20231025-193819.png">
+
+## 3.1 Data partition
+
+根据数据的样本空间和特征空间的不同分布模式，分为：横向联邦、纵向联邦和联邦迁移，如下图所示：
+
+<img src="/images/blog/A_survey_on_federated_learning/screenshot-20231025-194055.png">
+
+### 3.1.1 Horizontal federated learning
+
