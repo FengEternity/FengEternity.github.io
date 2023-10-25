@@ -8,5 +8,5 @@ tags:
 ---
 
 - **论文链接：**[https://www.sciencedirect.com/science/article/pii/S0950705121000381?via%3Dihub](https://www.sciencedirect.com/science/article/pii/S0950705121000381?via%3Dihub)
-- **会议：** Knowledge-based systems *CCFC* *SCI一区*
+- **会议：** Knowledge-based systems *（CCFC* *SCI一区）*
 - **Keywords**：
