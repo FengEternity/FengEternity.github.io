@@ -24,13 +24,14 @@ ControlNet 以 end-to-end 的方式学习特定任务的
 # 1. Introduction
 
 1. 从 text-to-image 引出问题：
-
+   
    1. 基于 prompt 的控制是否满足我们的需求？
    2. 在图像处理的许多任务中，都有着明确的公式，大模型能否应用于这些任务？
    3. 应该构建什么样的模型去处理广泛的问题条件和用户控制？
    4. 在特定的任务中，大模型是否能保留从数十亿张图片中获得的优势和能力？
 
 2. ControlNet 将一个大型扩散模型的权值克隆成一个"trainable copy"和一个"locked copy"
+   
    1. trainable copy: 保留了从数十亿张图片中学习到的网络能力
    2. locked copy: 在特定任务的数据集上进行训练，以学习控制条件
 
@@ -43,6 +44,7 @@ ControlNet 以 end-to-end 的方式学习特定任务的
 ## 2.1 HyperNetwork and Neural Network Structure
 
 起源于神经语言处理方法，**训练一个小的 RNN 来影响一个大的神经网络权值。**
+
 > 引用文献：
 > D. Ha, A. M. Dai, and Q. V. Le. Hypernetworks. In International Conference on Learning Representations, 2017.
 
@@ -62,7 +64,6 @@ ControlNet 以 end-to-end 的方式学习特定任务的
 
 $$y = F(x;\theta)$$
 
-
 上式指，神经网络 $F$ 使用一组参数 $\theta$ 将 $x$ 映射到 $y$ 中。
 ControlNet 的做法是：
 
@@ -79,8 +80,9 @@ ControlNet 的做法是：
 ## 3.2 ControlNet in Image Diffusion Model
 
 首先介绍了 Stable Diffusion Model 的相关内容，具体可以参照下面这篇论文：
+
 > R. Rombach, A. Blattmann, D. Lorenz, P. Esser, and B. Ommer. High-resolution image synthesis
-with latent diffusion models, 2021.
+> with latent diffusion models, 2021.
 
 <img src="/images/blog/Adding-Conditional-Control-to-Text-to-Text-Diffusion-Models/截屏2023-10-22 22.21.36.png">
 
@@ -99,7 +101,6 @@ with latent diffusion models, 2021.
 ## 3.5 Implementation
 
 作者提出了以下几种基于不同图像条件的 ControlNet 实现：Canny Edge, Canny Edge (Alter), Hough Line, HED Boundary, User Sketching, Human Pose (Openpifpaf), Human Pose (Openpose), Semantic Segmentation (COCO), Semantic Segmentation (ADE20K), Depth (large-scale), Depth (small-scale), Normal Maps, Normal Maps (extended), Cartoon Line Drawing
-
 
 Canny Edge效果图如下，其他实验结果图可参见原论文：
 <img src="/images/blog/Adding-Conditional-Control-to-Text-to-Text-Diffusion-Models/screenshot-20231023-103811.png">
