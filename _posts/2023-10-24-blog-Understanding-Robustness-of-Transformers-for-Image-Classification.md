@@ -47,6 +47,10 @@ tags:
 
 <img src="../images/blog/Understanding Robustness of Transformers for Image Classification/screenshot-20231024-210204.png">
 
+
+
+<img src="/images/blog/Understanding Robustness of Transformers for Image Classification/screenshot-20231024-210204.png">
+
 # 3. Robustness to Input Perturbations
 
 这一部分，作者比较了 Transformer 与 ResNets 对输入扰动的鲁棒性。
