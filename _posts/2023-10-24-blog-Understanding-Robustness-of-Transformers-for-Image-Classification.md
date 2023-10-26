@@ -45,10 +45,6 @@ tags:
 
 本篇文章中对比所使用的模型如下，
 
-<img src="../images/blog/Understanding Robustness of Transformers for Image Classification/screenshot-20231024-210204.png">
-
-
-
 <img src="/images/blog/Understanding Robustness of Transformers for Image Classification/screenshot-20231024-210204.png">
 
 # 3. Robustness to Input Perturbations
