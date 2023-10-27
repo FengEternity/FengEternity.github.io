@@ -107,10 +107,99 @@ $$联邦学习 = 分布式训练 + 隐私保护机制$$
 
 ### 3.2.1 Model aggregation
 
-<div>
-<img src="/images/blog/A_survey_on_federated_learning/screenshot-20231025-191922.png">
-</div>
+通过总结各方的模型参数来训练全局模型，从而避免在训练过程中传输原始数据。
 
-![](/Users/montylee/Documents/GitHub/FengEternity.github.io/images/blog/A_survey_on_federated_learning/screenshot-20231025-194055.png)
+### 3.2.2 Homomorphic encryption
+
+用户可以通过此方法对加密后的数据进行计算和处理，但在处理过程中不会泄露原始数据
+
+### 3.2.3 Differential privacy
+
+## 3.3 Applicable machine learning models
+
+### 3.3.1 Linear models
+
+分别在 linear regression, ridge regression and lasso regression 上取得了较好的性能
+
+### 3.3.2 Tree models
+
+可用于训练单个或多个决策树，如梯度增强决策树和随机森林
+
+### 3.3.3 Neural network models
+
+
+
+## 3.4 Communication architecture
+
+## 3.5 Methods for solving heterogeneity
+
+在联合学习的应用场景中，设备的差异会影响整个训练过程的效率低下。为了解决系统异构问题，有四种分流方式:异步通信、设备采样、容错机制和模型异构。
+
+
+
+### 3.5.1 Asynchronous communication
+
+异步通信机制可以很好地解决设备分散的问题
+
+
+
+### 3.5.2 Sampling
+
+在联合学习中，并不是每个设备都需要参与到每个迭代训练过程中。在一些联合学习场景中，设备被选中参与训练，而在场景的另一部分，设备主动参与训练。
+
+
+
+### 3.5.3 Fault-tolerant mechanism
+
+在不稳定的网络环境中，容错机制可以防止系统崩溃，特别是在分布式环境中。
+
+
+
+### 3.5.4 Model heterogeneity
+
+为了解决数据异构问题，联邦学习网络主要分为三种建模方式：
+
+1. 单个设备有自己的模型
+2. 训练一个适用于所有设备的全局模型
+3. 为特定的任务训练特定的模型
+
+
+
+# 4. Applications
+
+## 4.1 Service recommendation
+
+### 4.1.1 Google keyboard
+
+### 4.1.2 Intelligent medical diagnosis system
+
+## 4.2 Wireless commucation
+
+
+
+# 5. Challenge and future work
+
+## 5.1 Challenge
+
+### 5.1.1 Privacy protection
+
+### 5.1.2 Communication cost
+
+### 5.1.3 Systems heterogeneity
+
+### 5.1.4 Unreliable model upload
+
+## 5.2 Future work
+
+### 5.2.1 Privacy restrictions
+
+### 5.2.2 Trade-off between communication cost and computational pressure
+
+### 5.2.3 Multi-center federated learning
+
+### 5.2.4 Reliable client selection
+
+# 6. Conclusion
+
 
 
