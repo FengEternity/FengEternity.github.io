@@ -40,7 +40,7 @@ tags:
 首先介绍了深度学习在图像去雾任务中取得的优秀表现；接着介绍了 Transformer 直接应用于图像去雾任务中的几点挑战：
 
 1. **计算量大：**Transformer 的计算复杂度与 feature map 的分辨率是二次的，这使得它不适合 pix-to-pix 的去雾任务。虽然有已经有一些工作通过在小空间窗口中应用 self-attention 来缓解这个问题，但 Transformer 的接收域受到限制;
-2. **token 的设计：**visual Transformer 的基本元素通常有更灵活的尺度。然而，现有的 visual Transformer 网络通常通过固定的卷积核生成固定规模的 token。因此，在去雾任务中**引入灵活的 patch enbedding Transformer 仍有改进的空间**。
+2. **token 的设计：**visual Transformer 的基本元素通常有更灵活的尺度。然而，现有的 visual Transformer 网络通常通过固定的卷积核生成固定规模的 token。因此，在去雾任务中**引入灵活的 patch enbedding 仍有改进的空间**。
 
 
 
@@ -54,4 +54,4 @@ tags:
 
 # 附
 
-* https://zhuanlan.zhihu.com/p/658312750
+* [https://zhuanlan.zhihu.com/p/658312750](https://zhuanlan.zhihu.com/p/658312750)
