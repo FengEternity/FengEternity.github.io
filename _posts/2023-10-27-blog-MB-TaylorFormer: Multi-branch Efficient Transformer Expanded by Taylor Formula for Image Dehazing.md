@@ -52,6 +52,54 @@ tags:
 2. 与使用基于内核的 self-attention 公式相比，它提供了**更强的值逼近**，并且类似于普通的 Transformer ;
 3. 它使 Transformer 关注**像素级交互**，而不是通道级交互，这允许对特征进行更细粒度的处理。
 
+
+
+对于第二个问题，作者提出了一种基于多尺度 patch embedding 的多分支编码-解码主干（a multi-branch encoder-decoder backbone）。
+
+
+
+总结下来，本篇文章作者主要有以下几个贡献点：
+
+1. **提出了一种基于线性化 Transformer 的新变体。**引入MSAR模块，进一步纠正 TaylorFormer 的自我主义错误；
+2. **设计了一个具有多尺度 patch embedding 的多分支架构。**其中多尺度域、灵活的接受域形状和多层次的语义信息可以同时生成多尺度的符号，捕捉更强大的特征;
+3. 在公共合成数据集和真实数据集上的实验结果表明，所提出的 MB-TaylorForme 在参数和 mac 数较少的情况下，就能实现最先进的 (SOTA) 性能。
+
+
+
+# 2. Related Works
+
+1. **CNN-based Image Dehazing**
+
+2. **Efficient Self-attention**
+
+   列举了现阶段针对降低 Transformer 计算量的相关工作，主要包括以下几个方面：
+
+   1. 通过基于 self-attention 的滑动窗口来减少计算量
+   2. 修改 softmax-attention 
+
+3. **Multi-scale Transformer Networks**
+
+
+
+# 3. MB-TaylorFormer
+
+作者旨在建立一个高效和轻量级的基于 Transformer 的去雾网络。
+
+在这一部分中，首先描述了 MB-TaylorFormer 的总体架构 (图2a)。然后介绍了三个核心模块:多尺度 patch embedding (图2b)、Taylor 扩展 self-attention (图2c) 和MSAR模块 (图2d)。
+
+<img src='../images/blog/MB-TaylorFormer/1.png'>
+
+## 3.1 Multi-branch Backbone
+
+对于输入图片 *I*，
+
+1. 先使用卷积层进行浅层特征提取
+2. 随后，采用一个四阶段的 encoder-decoder 网络进行深度特征提取
+   1. 每个阶段包含一个 multi-scale patch 嵌入的残差块和一个多分支的 Transformer 块
+   2. 使用 multi-scale patch embedding 生成 multi-scale token
+   3. 然后将他们分别输入到 Multi-branch Transformer block
+   4. 在 Multi-branch Transformer block 末端使用 SKFF 模块融合不同分支产生的特征
+
 # 附
 
 * [https://zhuanlan.zhihu.com/p/658312750](https://zhuanlan.zhihu.com/p/658312750)
